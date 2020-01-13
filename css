@@ -1,0 +1,167 @@
+* {} /*UNIVERSAL SELECTOR*/
+
+body {}  /*WHOLE BODY SELECTOR*/
+
+h1, h2, p {} /*TYPE SELECTOR */
+
+.class {} /*CLASS SELECTOR*/
+
+#id {} /*ID SELECTOR*/
+
+li>a {} /*CHILD SELECTOR*/
+
+p a {} /*DESCENDANT SELECTOR */
+
+h1+p {} /*ADJACENT SIBLING SELECTOR*/
+
+h1~p {} /*GENERAL SIBLING SELECTOR*/
+
+/*OVERALL PAGE LAYOUT, BOXES AND POSITIONS OF ELEMENTS */
+body, header, nav, aside, section {
+    /* column grid sizes: 940px, 460px, 300px, 220px, 140px */
+
+    /* FORM, SHAPE OF ELEMENT*/
+    display: inline, block, inline-block, none;
+    display: flex;
+    flex-direction: row, row-reverse;
+    justify-content: space-between, space-around, space-evenly;
+    flex-flow: row wrap;
+    flex-basis: 300px;
+ 
+    /* SIZE OF ELEMENT*/ 
+    width: 300px, 100vw;
+    height: 300px, 100vh;
+    height: calc(100vh - 100px);
+    min-width: 300px, 100vw;
+    min-height: 300px, 100vh;
+    max-width: 300px, 100vw;
+    max-height: 300px, 100vh;
+
+    /* BACKGROUND OF ELEMENT*/
+    background-image: url("https://cdn.pixabay.com/photo/2014/01/30/18/26/singapore-river-255116_960_720.jpg");
+    background-repeat: no-repeat, repeat, repeat-x, repeat-y, fixed, scroll;
+    background-position: center;
+    background-size: cover, contain;
+
+    /*BACKGROUND COLOR OF ELEMENT*/
+    background-color: black;
+    background-color: rgb (256,123,212); opacity: 0.5;
+    background-color: #fff;
+    background-color: hsla(0, 50%, 60%, 0.5);
+    
+    
+    /* BORDER OF ELEMENT*/
+    border: 1px, thin, medium, thick, dashed, dotted, solid, ridge, double, groove, inset, outset, hidden/none, red; 
+    border-top: ; border-right:; border-left:; border-bottom:;
+    border-radius: 10px;
+    box-shadow: inset -2px, -2px, -8px, #000;
+    visibility: hidden, visible;
+    overflow: hidden, scroll;
+    margin: 100px, 100%;
+    padding: 100px, 100%;
+
+    /*LAYOUT & POSITION OF ELEMENTS*/
+    position: relative, absolute, fixed, static;
+    top: 70px, 70%;
+    right: 70px, 70%;
+    left: 70px, 70%;
+    bottom: 70px, 70%;
+    float: left, right, inherit, none;
+    z-index: 9999;
+    clear: both, left, right, none;
+    margin: 0 auto;
+}
+
+/*TEXT & FONTS */
+h1, h2, article, P
+p:first-letter 
+p:first-line {
+    /* FONT STYLING */
+    /*WHEN PICKING COLORS FOR FONT AND BACKGROUND, ENSURE YOU HAVE CONTRAST */
+    color: red; rgba (); #000; hsla(); 
+    font-family: serif, 'sans-serif', helvetica;
+    font-size: 16px, 1rem, 1em, 150%;
+    font-weight: lighter, medium, bold, bolder;
+    font-weight: 100, 300, 600, 900;
+    font-style: normal, italic, oblique;
+    font-stretch: condensed, regular, expanded;
+    text-transform: uppercase, lowercase, capitalize;
+    text-decoration: none, underline, overline, line-through, blink;
+    line-height: 16px, 1rem, 1em, 150%; 
+    letter-spacing: 16px, 1rem, 1em, 150%;
+    word-spacing: 16px, 1rem, 1em, 150%;
+    text-align: left, right, center, justify;
+    vertical-align: baseline, sub, top, middle, bottom;
+    text-indent: 20px;
+    text-shadow: 2px, 2px, 8px #000;
+
+}
+
+/*TEXT FROM EXTERNAL RESOURCE*/
+/* FONT FORMATS: EOT, WOFF, TTF/OTF, SVG*/
+@font-face {
+    font-family: GoogleFont;
+    src: url(fonts/GoogleFont);
+}
+h1, h1 {
+    font-family: serif, GoogleFont;
+}
+
+ {
+    font-size: 32px, 200%;
+}
+
+/* STYLING LINKS */
+a:link 
+a:visited
+a:hover
+a:active
+a:focus {
+    color: deeppink;
+    text-decoration: none;
+}
+
+/* LISTS, TABLES & FORMS */
+li, ul
+li:first-child
+li:last-child
+li:nth-child(even, odd, 1)
+ {
+    list-style: none;
+    list-style-type: disc, circle, lower-roman;
+    list-style-position: inside, outside;
+}
+
+/*TABLE PROPERTIES */
+table {
+    border-collapse: collapse, separate;
+}
+
+/*SUMBIT BUTTONS*/
+button
+button:hover
+button:focus 
+button:active 
+ {
+    color: ;
+    text-shadow: 2px, 2px, 4px, #000;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+/* MEDIA QUERIES */
+@media only screen and (min-width:  max-width: ; )
+
+/* OVERITES OTHER STYLES */
+!important p {
+    color: blue;
+} 
+
+/* ANIMATIONS AND TRANSFORMATIONS */
+
+button {
+    transform: scale(1.2);
+    transform: rotateX();
+    transition: all 0.0s linear;
+    opacity: 0;
+}
